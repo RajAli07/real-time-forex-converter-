@@ -1,5 +1,14 @@
 # RealTime Forex Converter  
-![Project Screenshot][([PLACE_YOUR_IMAGE_LINK_HERE])](https://assets.onecompiler.app/42nyakuzq/43c5wtysv/Screen%20Shot%202025-03-18%20at%204.58.16%20PM.png)  
+
+## Overview  
+RealTime Forex Converter is a web-based platform designed to provide real-time foreign exchange rate conversion. It enables users to obtain up-to-date exchange rates and perform currency conversions efficiently.  
+
+## Screenshots  
+### Homepage  
+![Homepage](https://assets.onecompiler.app/42nyakuzq/43c5wtysv/Screen%20Shot%202025-03-18%20at%204.58.16%20PM.png)  
+
+### Currency Conversion Page  
+![Conversion Page](https://assets.onecompiler.app/42nyakuzq/43c5wtysv/Screen%20Shot%202025-03-18%20at%204.58.25%20PM.png)  
 
 ## About  
 RealTime Forex Converter is a web-based platform that provides real-time foreign exchange rate conversion. It enables users to obtain up-to-date exchange rates and convert currencies efficiently.  

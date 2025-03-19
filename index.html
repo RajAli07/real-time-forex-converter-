@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="converter-card">
+        <!-- Dark Mode Toggle Icon -->
+        <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+            <img src="https://assets.onecompiler.app/43a927tw7/43a8vw8y2/icons8-do-not-disturb-ios-48.png" alt="Light Mode" class="light-icon">
+            <img src="https://assets.onecompiler.app/43a927tw7/43a8vw8y2/icons8-light-48.png" alt="Dark Mode" class="dark-icon">
+        </div>
+
+        <h1>RealTime Forex Converter</h1>
+
+        <!-- From Currency Dropdown -->
+        <label for="fromCurrency">From Currency:</label>
+        <select id="fromCurrency"></select>
+
+     <div class="swap-container">
+    <img src="https://assets.onecompiler.app/43a927tw7/43a8vw8y2/icons8-swap-30.png" alt="Swap" class="swap-icon light-icon" onclick="swapCurrencies()">
+    <img src="https://assets.onecompiler.app/43a927tw7/43a8vw8y2/icons8-swap-30%20copy.png" alt="Swap" class="swap-icon dark-icon" onclick="swapCurrencies()">
+</div>
+        <!-- To Currency Dropdown -->
+        <label for="toCurrency">To Currency:</label>
+        <select id="toCurrency"></select>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Amount" value="1000" />
+
+        <button onclick="convertCurrency()">Convert</button>
+
+        <h2 id="result"></h2>
+        <p class="para">RealTime Forex Converter | © 2025 Raj Ali | All Rights Reserved</p>
+
+    </div>
+
+    <!-- Link to external JavaScript file -->
+  <script src="countrylist.js"></script>
+  <script src="currency.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>

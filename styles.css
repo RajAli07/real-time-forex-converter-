@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #2C3E50, #34495E);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    color: #ffffff;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #f5f5f5;
+}
+
+body.dark-mode .converter-card {
+    background: #222;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
+}
+
+/* Card Container */
+.converter-card {
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.converter-card:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+body.dark-mode h1 {
+    color: #f5f5f5;
+}
+
+/* Form fields */
+select, input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background: #f9f9f9;
+    box-sizing: border-box;
+}
+
+body.dark-mode select,
+body.dark-mode input[type="number"] {
+    background: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+select:focus, input[type="number"]:focus {
+    border-color: #6c63ff;
+    background: #ffffff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+/* Swap icon styles */
+.swap-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    position: relative;
+}
+
+/* Default Light Mode Swap Icon */
+.swap-icon.light-icon {
+    display: block;
+}
+
+/* Default Dark Mode Swap Icon (Hidden by Default) */
+.swap-icon.dark-icon {
+    display: none;
+}
+
+/* When Dark Mode is Enabled, Swap Icons */
+body.dark-mode .swap-icon.light-icon {
+    display: none;
+}
+
+body.dark-mode .swap-icon.dark-icon {
+    display: block;
+}
+
+
+/* Swap icon hover effect */
+.swap-icon {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.swap-icon:hover {
+    transform: rotate(180deg);
+}
+
+
+/* Button styles */
+button {
+    background: #6c63ff;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #5048d4;
+    box-shadow: 0 5px 15px rgba(80, 72, 212, 0.3);
+}
+
+/* Copyright Text Inside Converter Card */
+.para {
+    font-size: 0.75rem;  /* Chhota size */
+    font-family: 'Montserrat', sans-serif;  /* Alag font */
+    color: #666;  /* Default color */
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Dark mode me color change */
+body.dark-mode .para {
+    color: #bbb;
+}
+
+
+/* Dark Mode Toggle Icon Inside Converter Card (Bottom-Right) */
+.dark-mode-toggle {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Reduce Icon Size */
+.dark-mode-toggle img {
+    width: 20px;  /* Reduced size */
+    height: 20px; /* Reduced size */
+}
+
+/* Default Light Mode Icon */
+.dark-mode-toggle img.light-icon {
+    display: block;
+}
+
+/* Default Dark Mode Icon (Hidden by Default) */
+.dark-mode-toggle img.dark-icon {
+    display: none;
+}
+
+/* When Dark Mode is Enabled, Swap Icons */
+body.dark-mode .dark-mode-toggle img.light-icon {
+    display: none;
+}
+
+body.dark-mode .dark-mode-toggle img.dark-icon {
+    display: block;
+}
+
+
+/* Result display */
+#result {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #2e3a59;
+}
+
+body.dark-mode #result {
+    color: #f5f5f5;
+}
+
+/* Input label styles */
+label {
+    font-size: 1.1rem;
+    color: #444;
+    margin-top: 10px;
+    display: block;
+    font-weight: 600;
+}
+
+body.dark-mode label {
+    color: #f5f5f5;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .converter-card {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
